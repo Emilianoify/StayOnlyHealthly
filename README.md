@@ -1,2 +1,3 @@
+La aplicación necesita: Google-services.json ya que esta hecha con FirebaseAuth, RealtimeDatabase y Storage de firebase.
 La aplicación cuenta con: Una pantalla de registro y otra de inicio de sesion. Cada persona que se registre debe verificar el email y una vez verificado podrá entrar al home. En el home encontrará distintos botones que lo llevarán a diferentes actividades como el envió de datos a la base de datos y a su vez la consulta de otros datos de interés. 
 Cada usuario puede ver datos en comun como los "pacientes" que posee la base de datos, los cuales podemos registrar nosotros mismos.
