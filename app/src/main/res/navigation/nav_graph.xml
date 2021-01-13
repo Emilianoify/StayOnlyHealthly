@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.stay.informarnos.ui.menuprincipal.HomeFragment"
+        android:label="Informarnos"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/actionGoPerfil"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/actionGoBuscarPaciente"
+            app:destination="@id/buscarPaciente" />
+        <action
+            android:id="@+id/actionGoRegistroAplicaciones"
+            app:destination="@id/registroDeAplicaciones" />
+        <action
+            android:id="@+id/actionGoEnviarDatos"
+            app:destination="@id/envioDeDatos" />
+        <action
+            android:id="@+id/actionGoEstadisticas"
+            app:destination="@id/estadisticas" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.stay.informarnos.ui.fragments.ProfileFragment"
+        android:label="Mi Perfil"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_updateEmail"
+            app:destination="@id/updateEmail" />
+        <action
+            android:id="@+id/actionUpdateMail"
+            app:destination="@id/updateEmail" />
+        <action
+            android:id="@+id/actionUpdatePass"
+            app:destination="@id/updatePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEmail"
+        android:name="com.stay.informarnos.ui.fragments.UpdateEmail"
+        android:label="@string/tv_cambiarEmail"
+        tools:layout="@layout/fragment_update_email" >
+        <action
+            android:id="@+id/actionReturnProfile"
+            app:destination="@id/profileFragment"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePassword"
+        android:name="com.stay.informarnos.ui.fragments.UpdatePassword"
+        android:label="Cambiar Contraseña"
+        tools:layout="@layout/fragment_update_password">
+        <action
+            android:id="@+id/actionUpdatedPass"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buscarPaciente"
+        android:name="com.stay.informarnos.ui.fragments.BuscarPaciente"
+        android:label="@string/tv_buscarpaciente"
+        tools:layout="@layout/fragment_buscar_paciente" />
+    <fragment
+        android:id="@+id/registroDeAplicaciones"
+        android:name="com.stay.informarnos.ui.fragments.RegistroDeAplicaciones"
+        android:label="Registro de aplicaciones"
+        tools:layout="@layout/fragment_registro_de_aplicaciones"/>
+    <fragment
+        android:id="@+id/envioDeDatos"
+        android:name="com.stay.informarnos.ui.fragments.EnvioDeDatos"
+        android:label="@string/tv_enviarformulario"
+        tools:layout="@layout/fragment_envio_de_datos"/>
+    <fragment
+        android:id="@+id/estadisticas"
+        android:name="com.stay.informarnos.ui.fragments.Estadisticas"
+        android:label="Mis Estadisticas"
+        tools:layout="@layout/fragment_estadisticas"/>
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sexo">
+        <item>-Seleccione-</item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+        <item>No espeficiado</item>
+</string-array>
+
+    <string-array name="sex">
+        <item>-Seleccione-</item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+        <item>No espeficiado</item>
+    </string-array>
+</resources>

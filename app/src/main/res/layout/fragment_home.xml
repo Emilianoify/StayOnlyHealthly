@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    tools:context=".ui.menuprincipal.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2a4365">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@id/ivFotoP"
+            app:layout_constraintTop_toBottomOf="@+id/tvBienvenida" />
+
+        <TextView
+            android:id="@+id/tvDiaDeHoy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoP"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivFotoP"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_boy"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/tv_bienvenida"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@id/ivFotoP"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/ivFotoP"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/bPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#274163"
+                android:drawableStart="@drawable/miperfil"
+                android:text="@string/tv_misdatos"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <Button
+                android:id="@+id/bEstadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#274163"
+                android:drawableStart="@drawable/estadisticas"
+                android:text="@string/tv_verestadisticas"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <Button
+                android:id="@+id/bBuscarPersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#274163"
+                android:drawableStart="@drawable/paciente"
+                android:text="@string/tv_buscarpaciente"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <Button
+                android:id="@+id/bRegistrarAplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#274163"
+                android:drawableStart="@drawable/inyeccion"
+                android:text="@string/tv_registraraplicaciones"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <Button
+                android:id="@+id/bFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#274163"
+                android:drawableStart="@drawable/formulario"
+                android:text="@string/tv_enviarformulario"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="6dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="4dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+</ScrollView>

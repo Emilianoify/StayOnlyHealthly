@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias">
+        <item>-Seleccione-</item>
+        <item>Vacuna de Calendario Nacional</item>
+        <item>Vacuna de Campaña</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="seleccione">
+        <item>-Seleccione-</item>
+    </string-array>
+
+    <string-array name="vcn">
+        <item>-Seleccione-</item>
+        <item>Antigripal</item>
+        <item>BCG</item>
+        <item>Doble Bacteriana</item>
+        <item>Doble Viral</item>
+        <item>Fiebre Amarilla</item>
+        <item>Fiebre Hemorragica Argentina</item>
+        <item>Hepatitis A</item>
+        <item>Hepatitis B</item>
+        <item>IPV</item>
+        <item>Meningococica Tetravalente</item>
+        <item>Neumococo conjugada 13V</item>
+        <item>Neumococo Polisacarida 23V</item>
+        <item>Quintuple</item>
+        <item>Rotavirus</item>
+        <item>Triple bacteriana celular</item>
+        <item>Triple bacteriana acelular</item>
+        <item>VPH</item>
+        <item>Varicela</item>
+    </string-array>
+
+    <string-array name="vOtros">
+        <item>-Seleccione-</item>
+        <item>Antigripal Cuadrivalente</item>
+        <item>Antirrábica Cultivo en Lineas Celulares</item>
+        <item>Antirrábica  Fuenzalida Palacios</item>
+        <item>Colera Oral</item>
+        <item>Fiebre Tifoidea Oral</item>
+        <item>Fiebre Tifoidea Parenteral</item>
+        <item>Haeomophilus Influenzae tipo b</item>
+        <item>Hepatitis A y B</item>
+        <item>Inmunoglobulina Antihepatitis B</item>
+        <item>Inmunoglobulina Antirrábica Humana</item>
+        <item>Inmunoglobulina Antivaricela Zoster</item>
+        <item>Inmunoglobulina Hiperinmune Antitetánica</item>
+        <item>Inmunoglobulina Polivalente</item>
+        <item>Meningococica Multicomponente del grupo B</item>
+        <item>Meningococica Monovalente Conjugada del grupo C</item>
+        <item>Neumococo Polisacarida 23 Valente</item>
+        <item>Quintuple Acelular</item>
+    </string-array>
+
+    <string-array name="vCampaña">
+        <item>-Seleccione-</item>
+    </string-array>
+
+    <string-array name="motivos">
+        <item>-Seleccione-</item>
+        <item>Regular</item>
+        <item>Atrasado</item>
+        <item>Factores de riesgo</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="tresdosis">
+        <item>-Seleccione-</item>
+        <item>Primera Dosis</item>
+        <item>Segunda Dosis</item>
+        <item>Tercera Dosis</item>
+    </string-array>
+
+    <string-array name="dosdosis">
+        <item>-Seleccione-</item>
+        <item>Primera Dosis</item>
+        <item>Segunda Dosis</item>
+        <item>Tercera Dosis</item>
+    </string-array>
+
+    <string-array name="tresDosisConRefuerzo">
+        <item>-Seleccione-</item>
+        <item>Primera Dosis</item>
+        <item>Segunda Dosis</item>
+        <item>Tercera Dosis</item>
+        <item>Refuerzo</item>
+    </string-array>
+
+    <string-array name="unicaDosis">
+        <item>-Seleccione-</item>
+        <item>Unica Dosis</item>
+    </string-array>
+
+</resources>
